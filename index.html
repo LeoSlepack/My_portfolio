@@ -15,26 +15,39 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Javascript bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous" defer></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <!--BACKGROUND IMAGE-->
     <div class="container-fluid" id="background"> 
         <!--NAVBAR-->
-        <nav class="container"> 
-            <h2>Portfo<span>lio</span></h2>
-            <ul class="cabecalho-link">
-                <li><a href="#">Início</a></li>
-                <li><a href="#about">Sobre mim</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+        <nav id="navbar" class="navbar navbar-expand-lg "> 
+            <h2>Portfo<span class="green-color">lio</span></h2>
+            <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-items"
+            aria-controls="navbar-items"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <i class="bi bi-list green-color"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="cabecalho-link navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link white-color" href="#">Início</a></li>
+                    <li class="nav-item"><a class="nav-link white-color" href="#about">Sobre mim</a></li>
+                    <li class="nav-item"><a class="nav-link white-color" href="#projects">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link white-color" href="#contact-me">Contato</a></li>
+                </ul>
+            </div>
         </nav>
 
         <!--MAIN-->
         <div class="container" id="main">
             <h4>Olá, meu nome é</h4>
-            <h1>Leonardo <span>Slepack</span></h1>
+            <h1>Leonardo <span class="green-color">Slepack</span></h1>
             <h3>Eu sou desenvolvedor web</h3>
             <div class="form-contact">
                 <form action="#">
@@ -47,13 +60,17 @@
 
     <!--BACKGROUND SOBRE MIM-->
     <div id="about" class="container-fluid background-sobre">
-        <div class="container main-sobre">
-            <img src="imagens/25fe3358-ee46-4efb-8581-1b8d2a0fa58f.jpg" alt="Minha foto" class="img-fluid">
-            <div class="text-sobre">
-                <h2>Sobre Mim</h2>
-                <h5>Desenvolvedor <span>front-end</span></h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi corrupti voluptatum necessitatibus blanditiis praesentium autem laudantium voluptate eligendi commodi atque perferendis distinctio, id temporibus. Architecto perferendis ea facere ut</p>
-                <button class="button-sobre" type="button">Vamos conversar</button>
+        <div class="container main-sobre row justify-content-around">
+            <div class="col-12">
+                <img src="imagens/25fe3358-ee46-4efb-8581-1b8d2a0fa58f.jpg" alt="Minha foto" class="img-fluid">
+            </div>
+            <div class="col-12">
+                <div class="text-sobre">
+                    <h2>Sobre Mim</h2>
+                    <h5>Desenvolvedor <span>front-end</span></h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi corrupti voluptatum necessitatibus blanditiis praesentium autem laudantium voluptate eligendi commodi atque perferendis distinctio, id temporibus. Architecto perferendis ea facere ut</p>
+                    <button class="button-sobre" type="button">Vamos conversar</button>
+                </div>
             </div>
         </div>
     </div>
@@ -65,7 +82,7 @@
         </div>
         <div class="container caixas">
             <div class="card">
-                <i class="bi bi-book-fill"></i>
+                <i class="bi bi-book-fill green-color"></i>
                 <h5>Projeto Art</h5>
                 <p>Projeto feito com bootstrap5, simulando uma galeria online.</p>
                 <img src="imagens/projetoarte.png" alt="projeto arte" class="img-fuid">
@@ -73,7 +90,7 @@
                 <a href="https://leoslepack.github.io/project-art/" target="_blank"><button class="button-card">Visite a página</button></a>
             </div>
             <div class="card">
-                <i class="bi bi-book-fill"></i>
+                <i class="bi bi-book-fill green-color"></i>
                 <h5>Projeto Redes Sociais</h5>
                 <p>Projeto simulando um celular com apps, usando iframes para mostrar as redes sociais.</p>
                 <img src="imagens/projetoredes.png" alt="projeto redes" class="img-fluid">
@@ -83,7 +100,7 @@
                 </a>
             </div>
             <div class="card">
-                <i class="bi bi-book-fill"></i>
+                <i class="bi bi-book-fill green-color"></i>
                 <h5>Projeto login</h5>
                 <p>Página de login responsiva e com validações de formulário</p>
                 <img src="imagens/projetologin.png" alt="projeto login" class="img-fluid">
@@ -96,7 +113,7 @@
 
         <div class="container caixas">
             <div class="card">
-                <i class="bi bi-book-fill"></i>
+                <i class="bi bi-book-fill green-color"></i>
                 <h5>Projeto Sitedroid</h5>
                 <p>Site responsivo, contando a história do mascote do famoso Android.</p>
                 <img src="imagens/sitedroid.png" alt="projeto site Android" class="img-fuid">
@@ -104,7 +121,7 @@
                 <a href="https://leoslepack.github.io/sitedroid/android.html" target="_blank"><button class="button-card">Visite a página</button></a>
             </div>
             <div class="card">
-                <i class="bi bi-book-fill"></i>
+                <i class="bi bi-book-fill green-color"></i>
                 <h5>Projeto Cordel Moderno</h5>
                 <p>Site responsivo, contando o cordel feito por Milton Duarte.</p>
                 <img src="imagens/cordelmoderno.png" alt="projeto cordel Moderno" class="img-fluid">
@@ -114,7 +131,7 @@
                 </a>
             </div>
             <div class="card">
-                <i class="bi bi-book-fill"></i>
+                <i class="bi bi-book-fill green-color"></i>
                 <h5>Jogo da Velha</h5>
                 <p>Apenas um jogo da velha feito com html5, css3 e JavaScript.</p>
                 <img src="imagens/jogodavelha.png" alt="Jogo da velha" class="img-fluid">
@@ -127,7 +144,7 @@
     </div>
 
     <!--FOOTER-->
-    <div class="container-fluid me-contate">
+    <div id="contact-me" class="container-fluid me-contate">
         <p>Entre em contato comigo para um orçamento ou possível oportunidade de trabalho!!</p>
         <a href="#main">
             <button class="button-send">Enviar Mensagem</button>
@@ -151,7 +168,5 @@
             </a>
         </div>
     </div>
-
-
 </body>
 </html>

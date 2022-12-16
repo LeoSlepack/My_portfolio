@@ -7,6 +7,14 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.green-color {
+    color: green;
+}
+
+.white-color {
+    color: #fff;
+}
+
 /*BACKGROUND */
 
 #background {
@@ -17,15 +25,6 @@
 
 /*NAVBAR */
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
-}
-
 nav h2 {
     color: #fff;
     font-size: 35px;
@@ -33,34 +32,31 @@ nav h2 {
     letter-spacing: 2px;
 }
 
-span {
+
+#navbar {
+    border-bottom: 1px solid green;
+}
+
+#navbar a:hover {
     color: green;
 }
 
-nav ul li {
-    display: inline-block;
-    padding: 10px 25px;
-    list-style-type: none;
+#navbar-items .navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
-}
-
-nav ul li a:hover {
-    color:green;
-    transform: scale(1.2);
+#navbar-items .nav-item {
+    margin: 0 1em;
 }
 
 /* MAIN  */
 
 #main {
     position: absolute;
-    top: 50%;
-    left: 8%;
+    top: 42%;
+    left: 10%;
     transform: translateY(-50);
 }
 
@@ -187,7 +183,6 @@ h3 {
 .title-project h2 {
     color: #fff;
     font-size: 55px;
-    width: 1130px;
     margin: 30px auto;
     text-align: center;
 }
@@ -216,7 +211,6 @@ h3 {
     display: block;
     text-align: center;
     margin-top: 5px;
-    color: green;
 }
 
 .card h5 {
@@ -331,4 +325,12 @@ h3 {
 .redes-sociais a:hover {
     transform: scale(1.2);
     transition: .3s;
+}
+
+/* RESPONSIVIDADE */
+
+@media (min-width: 768px) {
+    #about .main-sobre .col-12 {
+        max-width: 50%;
+    }
 }
