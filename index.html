@@ -101,20 +101,28 @@
             </div>
             <div class="col-12">
                 <div class="back-white" id="form-main">
-                    <form action="#">
+                    <form action="https://formsubmit.co/leoslepack1@gmail.com" method="post">
                         <div class="title-form">
                             <h4 class="green-color">
                                 Entre em contato
                             </h4>
                         </div>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucess.html">
+                        <div id="inputname">
+                            <label for="name" class="form-label green-color">Nome:</label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Digite seu nome">
+                        </div>
+                        <br>
                         <div id="inputmail">
                             <label for="email" class="form-label green-color">E-mail:</label>
                             <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu e-mail">
                         </div>
+                        <br>
                         <div id="inputmsg">
                             <label for="msg" class="form-label green-color">Mensagem:</label>
                             <textarea class="form-control" name="msg" id="msg" cols="30" rows="10"></textarea>
                         </div>
+                        <br>
                         <input id="submit-form" type="submit" class="btn green-color back-white">
                     </form>
                 </div>
