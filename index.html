@@ -44,11 +44,36 @@
             </div>
         </nav>
 
-        <!--MAIN-->
-        <div class="container" id="main">
-            <h4>Olá, meu nome é</h4>
-            <h1>Leonardo <span class="green-color">Slepack</span></h1>
-            <h3>Eu sou desenvolvedor web</h3>
+    <!--MAIN-->
+    <div class="container-fluid" id="background-main">
+        <div class="container row justify-content-around">
+            <div class="col-12">
+                <div id="title-main">
+                    <h6 class="white-color">Olá, meu nome é</h6>
+                    <h1 class="white-color">Leonardo<span class="green-color">Slepack</span></h1>
+                    <h6 class="white-color">Eu sou desenvolvedor web</h6>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="back-white" id="form-main">
+                    <form action="#">
+                        <div class="title-form">
+                            <h4 class="green-color">
+                                Entre em contato
+                            </h4>
+                        </div>
+                        <div id="inputmail">
+                            <label for="email" class="form-label green-color">E-mail:</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu e-mail">
+                        </div>
+                        <div id="inputmsg">
+                            <label for="msg" class="form-label green-color">Mensagem:</label>
+                            <textarea class="form-control" name="msg" id="msg" cols="30" rows="10"></textarea>
+                        </div>
+                        <input id="submit-form" type="submit" class="btn green-color back-white">
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -61,7 +86,7 @@
             <div class="col-12">
                 <div class="text-sobre">
                     <h2>Sobre Mim</h2>
-                    <h5>Desenvolvedor <span>front-end</span></h5>
+                    <h5>Desenvolvedor <span class="green-color">front-end</span></h5>
                     <p>Olá, meu nome é Leonardo, tenho 24 anos e sou estudante de Análise e Desenvolvimento de Sistemas, faço sites e landing pages usando html5, css3, javascipt e bootstrap5, na sessão abaixo você vai encontrar alguns dos meus projetos pessoais, caso você esteja interessado nos meus serviços entre em contato comigo!</p>
                     <a href="#footer"><button class="button-sobre" type="button">Vamos conversar</button></a>
                 </div>
