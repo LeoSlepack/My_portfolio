@@ -34,13 +34,60 @@
         </button>
         <div class="collapse navbar-collapse" id="navbar-items">
             <ul class="cabecalho-link navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link white-color" href="#">Início</a></li>
-                <li class="nav-item"><a class="nav-link white-color" href="#about">Sobre mim</a></li>
+                <li class="nav-item"><a class="nav-link white-color" href="#about">Sobre</a></li>
                 <li class="nav-item"><a class="nav-link white-color" href="#projects">Projetos</a></li>
-                <li class="nav-item"><a class="nav-link white-color" href="#contact-me">Contato</a></li>
+                <li class="nav-item">
+                    <a 
+                    class="nav-link white-color" 
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal"
+                    >
+                    Contatos
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
+
+    <!--Modal-->
+    <div 
+    class="modal fade" 
+    id="modal" 
+    tabindex="-1" 
+    aria-labelledby="modalLabel"
+    aria-hidden="true"
+    >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title green-color" id="modalLabel">Minhas Redes Sociais</h5>
+                    <button 
+                    class="btn-close green-color" 
+                    type="button" 
+                    data-bs-dismiss="modal" 
+                    arial-label="Close"
+                    >
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="redes-sociais">
+                        <a href="https://www.linkedin.com/in/leonardo-slepack-36a693244/" target="_blank">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=5541995120626" target="_blank">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="https://github.com/LeoSlepack" target="_blank">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sleopack/" target="_blank">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--MAIN-->
     <div class="container-fluid back-black-1" id="background-main">

@@ -63,16 +63,17 @@ nav h2 {
 
 @media (min-width: 768px) {
     #background-main .col-12 {
-        max-width: 30%;
+        max-width: 40%;
     }
 
     #background-main #title-main h6 {
-        margin-top: 40px;
-        font-size: 1.5em;
+        margin-top: 70px;
+        font-size: 2em;
     }
 
     #background-main #title-main h1 {
-        font-size: 3.5em;
+        font-size: 4em;
+        margin-top: 30px;
     }
 
 }
@@ -102,19 +103,19 @@ nav h2 {
 }
 
 #inputmail {
-    margin-left: 30px;
-    width: 80%;
+    margin-left: 15px;
+    width: 90%;
 }
 
 #inputmsg {
-    margin-left: 30px;
-    width: 80%;
+    margin-left: 15px;
+    width: 90%;
 }
 
 #submit-form {
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 28px;
+    margin-left: 13px;
     border: 1px solid #101010;
 }
 
