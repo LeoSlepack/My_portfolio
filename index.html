@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Javascript bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous" defer></script>
-    <script src="js/script.js" defer></script>
 </head>
 <body>
     <!--NAVBAR-->
@@ -110,20 +109,20 @@
                         <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucess.html">
                         <div id="inputname">
                             <label for="name" class="form-label green-color">Nome:</label>
-                            <input type="text" name="name" id="name" class="form-control" placeholder="Digite seu nome">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Digite seu nome" required>
                         </div>
                         <br>
                         <div id="inputmail">
                             <label for="email" class="form-label green-color">E-mail:</label>
-                            <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu e-mail">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" required>
                         </div>
                         <br>
                         <div id="inputmsg">
                             <label for="msg" class="form-label green-color">Mensagem:</label>
-                            <textarea class="form-control" name="msg" id="msg" cols="30" rows="10"></textarea>
+                            <textarea class="form-control" name="msg" id="msg" cols="30" rows="10" required></textarea>
                         </div>
                         <br>
-                        <input id="submit-form" type="submit" class="btn green-color back-white">
+                        <button id="submit-form" type="submit" class="btn green-color back-white">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -240,5 +239,7 @@
             </a>
         </div>
     </div>
+
+    <script src="js/script.js" defer></script>
 </body>
 </html>
