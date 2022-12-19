@@ -19,6 +19,10 @@
     background-color: #fff;
 }
 
+.back-black-1 {
+    background-color: #101010;
+}
+
 /*BACKGROUND */
 
 #background {
@@ -62,12 +66,12 @@ nav h2 {
         max-width: 30%;
     }
 
-    #title-main h6 {
+    #background-main #title-main h6 {
         margin-top: 40px;
         font-size: 1.5em;
     }
 
-    #title-main h1 {
+    #background-main #title-main h1 {
         font-size: 3.5em;
     }
 
@@ -265,7 +269,7 @@ nav h2 {
 }
 
 .card a button:hover {
-     background-color: transparent;
+    background-color: transparent;
     border: 2px solid green;
     cursor: pointer;
 }
