@@ -15,6 +15,10 @@
     color: #fff;
 }
 
+.back-white {
+    background-color: #fff;
+}
+
 /*BACKGROUND */
 
 #background {
@@ -54,37 +58,64 @@ nav h2 {
 /* MAIN  */
 
 @media (min-width: 768px) {
-    #background #main {
-        position: absolute;
-        top: 30%;
-        left: 150px;
-        transform: translateY(-50);
+    #background-main .col-12 {
+        max-width: 30%;
     }
+
+    #title-main h6 {
+        margin-top: 40px;
+        font-size: 1.5em;
+    }
+
+    #title-main h1 {
+        font-size: 3.5em;
+    }
+
 }
 
-
-#main {
-    position: absolute;
-    top: 42%;
-    transform: translateY(-50);
+#title-main h6 {
+    margin-top: 10px;
+    font-size: 1em;
 }
 
-h4 {
-    color: #fcfcfc;
-    letter-spacing: 2px;
-    font-size: 30px;
+#title-main h1 {
+    font-size: 2em;
 }
 
-h1 {
-    color: #fff;
-    margin: 20px 0px 20px 0px;
-    font-size: 85px;
+#form-main {
+    border-radius: 10px;
+    border: 1px solid #191919;
+    background-color: #191919;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-h3 {
-    color: #fff;
-    font-size: 30px;
-    margin-bottom: 50px;
+.title-form h4 {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-bottom: 1px solid green;
+}
+
+#inputmail {
+    margin-left: 30px;
+    width: 80%;
+}
+
+#inputmsg {
+    margin-left: 30px;
+    width: 80%;
+}
+
+#submit-form {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 28px;
+    border: 1px solid #101010;
+}
+
+#submit-form:hover {
+    color: green;
 }
 
 
