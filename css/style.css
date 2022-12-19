@@ -34,6 +34,7 @@
 /*NAVBAR */
 
 nav h2 {
+    margin-left: 80px;
     color: #fff;
     font-size: 35px;
     cursor: pointer;
@@ -100,6 +101,11 @@ nav h2 {
     padding-bottom: 5px;
     text-align: center;
     border-bottom: 1px solid green;
+}
+
+#inputname {
+    margin-left: 15px;
+    width: 90%;
 }
 
 #inputmail {
